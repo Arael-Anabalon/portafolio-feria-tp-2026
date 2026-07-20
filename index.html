@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="araelanabalon@liceovvh.cl">
+    <title>Document</title>
+    <!-- Estilos personalizados CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR PRINCIPAL -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid px-4 d-flex flex-nowrap align-items-center justify-content-between">
+            <!-- LOGO -->
+            <a class="navbar-brand me-2" href="#">
+                <img src="static/images/logo-vate-vicente-huidobro-comeduc.svg" alt="Servidor no disponible..."
+                    width="250" style="max-width: 60vw; height: auto; display: block;">
+            </a>
+            <!-- BOTÓN HAMBURGUESA -->
+            <button class="navbar-toggler bg-transparent border-0 shadow-none fs-1 p-0 m-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
+                <i class="bi bi-list custom-hamburger-icon"></i>
+            </button>
+            <!-- MENU RESPONSIVO (SIDEBAR) -->
+            <div class="offcanvas offcanvas-end offcanvas-lg w-100 custom-sidebar-bg" tabindex="-1" id="sidebarMenu">
+                <div class="offcanvas-header d-lg-none">
+                    <h5 class="offcanvas-title fs-1 text-white">Menú</h5>
+                    <button type="button" class="btn-close btn-close-white fs-1 shadow-none"
+                        data-bs-dismiss="offcanvas"></button>
+                </div>
+                <hr class="opacity-100 text-white-50 my-0 d-lg-none">
+                <div class="offcanvas-body">
+                    <!-- LINKS PRINCIPALES -->
+                    <ul
+                        class="navbar-nav ms-auto mb-2 mb-lg-0 text-start d-flex flex-column flex-lg-row align-items-lg-center gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link fs-3 fs-lg-5 custom-nav-link custom-navbar-text" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item w-100 w-lg-auto position-relative">
+                            <a class="nav-link fs-3 fs-lg-5 d-flex justify-content-between align-items-center collapsed custom-nav-link"
+                                href="#" role="button" data-bs-toggle="collapse" data-bs-target="#cajonesProyectos">
+                                <span class="custom-navbar-text">Proyectos</span>
+                                <span class="font-monospace fs-4 flecha-acordeon ms-2 custom-navbar-text"><i
+                                        class="bi bi-caret-down-fill"></i></span>
+                            </a>
+                            <!-- CAJONES DESPLEGABLES -->
+                            <div class="collapse cajones-proyectos" id="cajonesProyectos">
+                                <!-- Se mantiene bg-transparent en móvil y se controla el fondo sólido en el CSS -->
+                                <div
+                                    class="d-flex flex-column mt-2 mt-lg-0 p-lg-0 rounded border-lg list-group list-group-flush border-top border-lg-top-none custom-cajones-contenedor">
+                                    <div class="p-lg-0 bg-transparent list-group-item custom-list-item">
+                                        <a class="nav-link fs-5 fs-lg-5 py-2 px-3 custom-cajon-link"
+                                            href="#">Programación 3°C</a>
+                                    </div>
+                                    <div class="p-lg-0 bg-transparent list-group-item custom-list-item">
+                                        <a class="nav-link fs-5 fs-lg-5 py-2 px-3 custom-cajon-link"
+                                            href="#">Programación 4°C</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-3 fs-lg-5 custom-nav-link custom-navbar-text"
+                                href="#">Especialidad</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="opacity-100 text-white-50 my-0 d-lg-none">
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Funciones personalizadas JS -->
+    <script src="static/js/script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

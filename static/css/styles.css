@@ -1,0 +1,123 @@
+:root {
+    --color-principal: #004379;
+    --color-secundario: #80BA27;
+    --color-terciario: #A13038;
+    --color-activo: #022746;
+}
+
+.collapsing {
+    transition: height 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+.flecha-acordeon i {
+    display: inline-block !important; 
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important; 
+    will-change: transform;
+}
+
+.custom-nav-link:not(.collapsed) .flecha-acordeon i {
+    transform: rotate(-180deg) !important;
+}
+
+/* ==========================================
+   BOTÓN HAMBURGUESA (MÓVIL)
+   ========================================== */
+.custom-hamburger-icon {
+    color: var(--color-secundario) !important;
+    font-size: 2.5rem !important;
+    transition: color 0.3s ease !important;
+    display: inline-block;
+}
+
+.navbar-toggler:hover .custom-hamburger-icon {
+    color: #ffffff !important;
+}
+
+/* ==========================================
+   DISEÑO PARA CELULARES (Móvil)
+   ========================================== */
+@media (max-width: 991.98px) {
+    .custom-sidebar-bg {
+        background-color: var(--color-principal) !important;
+    }
+
+    .cajones-proyectos.bg-white {
+        background-color: transparent !important;
+    }
+
+    .custom-navbar-text,
+    .custom-cajon-link {
+        color: #ffffff !important;
+        transition: color 0.3s ease !important;
+    }
+
+    .custom-nav-link:hover,
+    .custom-nav-link:hover .custom-navbar-text,
+    .custom-cajon-link:hover {
+        color: var(--color-secundario) !important;
+    }
+
+    .border-top {
+        border-top: 1px solid rgba(255, 255, 255, 0.15) !important;
+    }
+
+    .cajones-proyectos .list-group,
+    .cajones-proyectos .list-group-item {
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    .custom-cajon-link {
+        padding: 8px 16px !important;
+        display: block !important;
+    }
+}
+
+/* ==========================================
+   DISEÑO PARA COMPUTADORAS (Desktop)
+   ========================================== */
+@media (min-width: 992px) {
+    .custom-navbar-text,
+    .custom-cajon-link {
+        color: var(--color-principal) !important;
+        transition: color 0.3s ease !important;
+    }
+
+    .custom-nav-link:hover,
+    .custom-nav-link:hover .custom-navbar-text,
+    .custom-cajon-link:hover {
+        color: var(--color-secundario) !important;
+    }
+
+    .border-lg-top-none {
+        border-top: none !important;
+    }
+
+    .cajones-proyectos {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1050;
+        min-width: 240px;
+    }
+
+    .border-lg {
+        border: 1px solid #dee2e6 !important;
+        background-color: #ffffff !important;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .custom-cajones-contenedor {
+        background-color: #ffffff !important;
+    }
+
+    .custom-list-item,
+    .list-group-item {
+        background-color: #ffffff !important;
+        box-shadow: none !important;
+    }
+}
